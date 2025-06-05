@@ -1,0 +1,175 @@
+/* ============================= */
+/*        About Section          */
+/* ============================= */
+
+.about {
+    background-color: #f7ecec;         /* light pink background */
+    padding: 80px 20px;               /* generous top/bottom and side padding */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+  }
+  
+  .about-container {
+    max-width: 800px;                 /* limits width to keep text readable */
+    color: var(--text);
+    font-family: var(--body);
+    line-height: 1.8;
+    padding: 40px;
+  }
+  
+  .about-container h2 {
+    font-family: var(--heading);
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  
+  .about-container p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #444;
+  }
+  
+  /* .about-container a.btn {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  } */
+  
+  /* .about-container a.btn:hover {
+    background-color: white;    
+     color: rgb(67, 66, 66);
+
+  } */
+  
+
+
+
+/* Stats Section Styling */
+.stats-section {
+    padding: 4rem 2rem;
+  }
+  
+  .stats-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .stat-box {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    flex: 1 1 200px;
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-box:hover {
+    transform: scale(1.05);
+  }
+  
+  .stat-number {
+    font-family: var(--heading);
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+  }
+  
+  .stat-box p {
+    font-size: 1rem;
+    color: var(--text);
+  }
+
+  /* ============================= */
+/*     Philosophy Section        */
+/* ============================= */
+
+#philosophy  {
+    background-color: #fff5f5;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .philosophy-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #philosophy h2 {
+    font-family: var(--heading);
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+  
+  .philosophy-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Philosophy Section Responsive Grid */
+.philosophy-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Explanation:
+       - auto-fit: adjusts columns based on space
+       - minmax(220px, 1fr): each column at least 220px wide, but can grow
+    */
+  }
+  
+  @media (min-width: 992px) {
+    /* Laptop screen and up: Force 4 columns */
+    .philosophy-grid {
+      grid-template-columns: repeat(auto-fit, 1fr);
+    }
+  }
+  
+  
+  .philosophy-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .philosophy-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .philosophy-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: var(--primary);
+  }
+  
+  .philosophy-card h3 {
+    font-family: var(--heading);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--primary);
+  }
+  
+  .philosophy-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+ 
+  
+  

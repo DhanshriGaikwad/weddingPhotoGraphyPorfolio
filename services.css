@@ -1,0 +1,92 @@
+
+#packages  {
+    background-color: #fff5f5;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .packages-container {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  #packagesy h2 {
+    font-family: var(--heading);
+    font-size: 2.5rem;
+    color: var(--primary);
+    margin-bottom: 16px;
+  }
+  
+  .packages-description {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    color: #555;
+  }
+  
+  /* Philosophy Section Responsive Grid */
+.packages-grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    /* Explanation:
+       - auto-fit: adjusts columns based on space
+       - minmax(220px, 1fr): each column at least 220px wide, but can grow
+    */
+  }
+  
+  @media (min-width: 992px) {
+    /* Laptop screen and up: Force 4 columns */
+    .packages-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  
+  .packages-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .packages-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .packages-icon {
+    font-size: 2.5rem;
+    margin-bottom: 16px;
+    color: var(--primary);
+  }
+  
+  .packages-card h3 {
+    font-family: var(--heading);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    color: var(--primary);
+  }
+  
+  .packages-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+
+  ul.check-list {
+    margin: 0 auto;    /* center the UL horizontally */
+    text-align: left;  /* align text inside the UL to the left */
+    list-style-position: outside;
+  }
+
+  .most-popular{
+    border: 3px solid #b4013c;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+  }
+
+  .badge{
+    color: #b4013c;
+  }
+  
